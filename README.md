@@ -1,8 +1,8 @@
-# Docker Experiment
+# Docker Express Typescript
 
 Me getting familiar with Docker.
 
-## Local Development
+## 🚀 Getting Started
 
 ```bash
 npm i -g pnpm
@@ -16,12 +16,12 @@ pnpm i
 pnpm dev
 ```
 
-## Build and Run
+## 🐳 Docker
 
 ```bash
-docker build -t express-ts .
+pnm docker:build
 ```
 
 ```bash
-docker run -p 8080:8080 express-ts
+pnm docker:run
 ```
