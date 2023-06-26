@@ -1,9 +1,27 @@
 # Docker Experiment
 
+Me getting familiar with Docker.
+
+## Local Development
+
 ```bash
-docker build -t docker-experiment .
+npm i -g pnpm
 ```
 
 ```bash
-docker run -p 8080:8080 docker-experiment
+pnpm i
+```
+
+```bash
+pnpm dev
+```
+
+## Build and Run
+
+```bash
+docker build -t express-ts .
+```
+
+```bash
+docker run -p 8080:8080 express-ts
 ```
