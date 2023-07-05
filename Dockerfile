@@ -1,10 +1,7 @@
 FROM node:20-alpine
 
 WORKDIR /app
-COPY package.json .
-COPY tsconfig.json .
-COPY .env .
-COPY index.ts .
+COPY . .
 
 RUN corepack enable && corepack prepare pnpm@latest --activate
 # Enable `pnpm add --global` on Alpine Linux by setting
@@ -16,4 +13,4 @@ RUN pnpm i
 RUN pnpm build
 EXPOSE 8080
 
-CMD npm start
+CMD pnpm start

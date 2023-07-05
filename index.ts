@@ -10,7 +10,7 @@ const port = process.env.PORT;
 app.use(cors());
 
 app.get("/", (req: Request, res: Response) => {
-  res.send("Express Deez Nuts");
+  res.send('Express says "Hi!"');
 });
 
 app.listen(port, () => {
